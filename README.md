@@ -17,9 +17,9 @@ Foi criado os seguintes componentes:
 <app-banner bannerId="crm_de_cobranca"></app-banner>
 ```
 No qual informamos qual módulo deve ser referenciado no repositório de imagens.
-
+```
 <app-description></app-description>
-
+```
 Onde alimento o app-description.html com seu conteúdo específico.
 ```
 <app-section-title sectionTitle="Vídeos tutoriais"></app-section-title>
