@@ -18,7 +18,7 @@ import { DocItemComponent } from './doc-item/doc-item.component';
     SectionTitleComponent,
     VideoCardComponent,
     DocTitleComponent,
-    DocItemComponent
+    DocItemComponent,
   ],
   imports: [
     BrowserModule,

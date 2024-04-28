@@ -1,12 +1,14 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
   styleUrl: './banner.component.css'
 })
-export class BannerComponent {
+export class BannerComponent implements OnInit {
   @Input() bannerId: string = '';
-  //bannerUrl = 'https://academy.mxm.com.br/modulos/images/banner_' + this.bannerId + '.png';
-  bannerUrl = 'https://academy.mxm.com.br/modulos/images/banner_crm_de_cobranca.png';
+  bannerUrl:string = '';
+  ngOnInit(): void {
+    this.bannerUrl = 'https://academy.mxm.com.br/modulos/images/banner_' + this.bannerId + '.png';  
+  }
 }

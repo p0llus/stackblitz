@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 @Component({
   selector: 'app-video-card',
   templateUrl: './video-card.component.html',
@@ -8,6 +8,11 @@ import { Component, Input } from '@angular/core';
 export class VideoCardComponent {
   @Input() videoId: string = '';
   @Input() videoTitle: string = '';
-  //videoUrl = 'https://player.vimeo.com/video/' + this.videoId;
-  videoUrl = 'https://player.vimeo.com/video/398151094';
+  urlSafe: SafeResourceUrl = '';
+
+  constructor(public sanitizer: DomSanitizer) {}
+
+  ngOnInit() {
+    this.urlSafe = this.sanitizer.bypassSecurityTrustResourceUrl('https://player.vimeo.com/video/' + this.videoId);
+  }
 }

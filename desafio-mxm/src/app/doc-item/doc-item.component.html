@@ -1,16 +1,16 @@
 <div class="card">
-  <div class="card-header" role="tab" id="tituloindex101">
+  <div class="card-header" role="tab" id="titulo{{docItem}}">
     <h5 class="card-title">
-      <a class="collapsed" data-toggle="collapse" data-parent="#faq" href="#corpoindex101" aria-expanded="true" aria-controls="corpoindex101">
-        Introdução
+      <a class="collapsed" data-toggle="collapse" data-parent="#faq" href="#corpo{{docItem}}" aria-expanded="true" attr.aria-controls="corpo{{docItem}}">
+        {{ docName }}
       </a>
     </h5>
   </div>
-  <div id="corpoindex101" class="collapse in" role="tabcard" aria-labelledby="tituloindex101">
+  <div id="corpo{{docItem}}" class="collapse in" role="tabcard" attr.aria-labelledby="titulo{{docItem}}">
     <div class="card-body">
-      <div style="padding:56.25% 0 0 0;position:relative;">
+      <div [style]="paddingStyle">
         <iframe 
-          src="https://academy.mxm.com.br/modulos/mxadministra/index101.html" 
+          [src]="urlSafe"
           frameborder="0" 
           style="position:absolute;top:0;left:0;width:100%;height:100%;">
         </iframe>
