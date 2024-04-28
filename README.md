@@ -29,11 +29,11 @@ Onde alimento o app-description.html com seu conteúdo específico.
 
 Definindo qual seção será apresentada.
 
-      <app-video-card 
-        videoId="846283169" 
-        videoTitle="Atendimento do pedido de compras" 
-        class="col-xl-4 col-md-6 mb-4">
-      </app-video-card>
+<app-video-card 
+  videoId="846283169" 
+  videoTitle="Atendimento do pedido de compras" 
+  class="col-xl-4 col-md-6 mb-4">
+</app-video-card>
 
 Componente do card de vídeo, informando o ID do vídeo e o título do card, deve estar incluído na estrutura
 
@@ -44,15 +44,15 @@ Componente do card de vídeo, informando o ID do vídeo e o título do card, dev
 
 Para responsividade funcional pelo Bootstrap 4.
 
-    <app-doc-title docTitle="CADASTROS"></app-doc-title>
+<app-doc-title docTitle="CADASTROS"></app-doc-title>
 
 Componente referente a um tópico da seção de documentos
 
-    <app-doc-item 
-      docItem="12387" 
-      docItemPadding="56.25" 
-      docName="teste">
-    </app-doc-item>
+<app-doc-item 
+  docItem="12387" 
+  docItemPadding="56.25" 
+  docName="teste">
+</app-doc-item>
 
 Card de documento refenciado do repositório da MXM, informando o número da rotina, padding do card e nome do mesmo.
 
